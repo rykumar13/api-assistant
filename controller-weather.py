@@ -5,6 +5,7 @@ weather = WeatherObject()
 
 value = input("Specify weather detail you want to know:\n")
 
-answer = weather.get_weather_detail(value)
-
-print(f'{value}: {answer}')
+while not(value == 'exit'):
+    answer = weather.get_weather_detail(value)
+    print(f'{value}: {answer}')
+    value = input("Specify weather detail you want to know:\n")
